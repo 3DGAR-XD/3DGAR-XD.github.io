@@ -7,7 +7,7 @@ import PlayGround from "./components/PlayGround"
 import ContactMe from "./components/ContactMe"
 import NotFound from "./components/NotFound"
 export const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHistory(process.env.BASE_URL),
 	routes:
 	[
 		{ path: '/', component: HomeApp, name:"home"},
